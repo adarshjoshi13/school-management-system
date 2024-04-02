@@ -18,7 +18,7 @@ const App = () => {
   const { currentRole } = useSelector((state) => state.user);
   return (
     <Router>
-      {x1currentRole === null && (
+      {currentRole === null && (
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/choose" element={<ChooseUser visitor="normal" />} />
